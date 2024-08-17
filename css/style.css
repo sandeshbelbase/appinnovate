@@ -1,0 +1,262 @@
+/* importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* globall css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* custum css to make a container */
+.custom {
+    max-width: 1140px; /* Set a max-width similar to Bootstrap's container */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+    padding-left: 15px; /* Add padding on the left */
+    padding-right: 15px; /* Add padding on the right */
+    padding-top: 15px; /* Optional: Add padding on the top */
+    padding-bottom: 15px; /* Optional: Add padding on the bottom */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.banner{
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    height:100vh;
+    position: relative;
+    bottom: 0;
+    /* display: flex; */
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    /* justify-content: center; */
+}
+.logo {
+    display: block;
+    /* width: 40%; */
+    height: 50px;
+}
+nav{
+    /* width: 60%; */
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 36px; /* Space between menu items */
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+/* reusable button class */
+ button.main{
+    height: max-content;
+    background-color: #FFCA1D;
+    border-radius: 16px;
+    padding: 10px 24px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+
+}
+button.main:hover{
+    height: max-content;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 10px 24px;
+    color: #000000;
+    border: 1px solid #FFCA1D;
+}
+button.main:hover a{
+    color: #000000;
+}
+.main a{
+    font-size: 18px;
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+aside{
+    position: absolute;
+    top: 32%;
+}
+button.welcome{
+    padding: 12px 24px;
+    color: #2c2c2c;
+    background-color: #fff;
+    border-radius: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.service{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.heading{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+.heading span{
+    color: #FFCA1D;
+}
+.service-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.service-card img, p{
+    display: block;
+
+}
+.service-card p{
+    text-align: center;
+}
+.service-card h3{
+    margin: 0px;
+    text-align: center;
+}
+
+/* Features css covers here */
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.featurescard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+.features img{
+    flex: 1; /* Equal width for each item */
+    padding: 10px; /* Optional: Add padding */
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto; 
+    width: 500px;
+}
+.featurescard h3{
+    font-weight: bold;
+    font-size: 34px;
+    color: #4A4A4A;
+}
+.featurescard p{
+    font-size: 18px;
+    color: #575757;
+}
+
+.contactus{
+    background-image: url('../images/coffeeho.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactus h3{
+    font-size: 54px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px;
+}
+.contactus p{
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+}
+
+.contactus input{
+    color: #fff;
+    font-size: 22px;
+    margin: 15px 0px;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+}
+.contactus textarea{
+    color: #fff;
+    font-size: 22px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+}
+
+ input::placeholder, textarea::placeholder{
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+}
+
+/* footer css here */
+footer{
+    display: flex;
+    border-top: 1px solid #e3e3e3;
+    padding: 20px 0px;
+}
+.left-content{
+    flex: 1;
+}
+.footerlogo img{
+    width: 100%;
+}
+footer h5{
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.left-content h4{
+    margin: 10px;
+}
+.left-content h5{
+    margin: 0px;
+}
+.left-content h5 a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* css to overrite contactus background */
+
+.single{
+    background: none;
+    background-color: #bdbdd1;
+}
