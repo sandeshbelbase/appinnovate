@@ -20,7 +20,13 @@ body, html {
     padding-bottom: 15px; /* Optional: Add padding on the bottom */
     box-sizing: border-box; /* Ensure padding is included in the width */
 }
-
+/* css for hamburger sign for responsive design */
+i.hamburger{
+    visibility: hidden;
+}
+#offcanvas{
+    display: none;
+}
 .banner{
     background-image: url('../images/banner.png');
     background-size: cover;
@@ -71,7 +77,7 @@ nav ul li a{
     padding: 10px 24px;
     transition: 0.5s;
     border: 1px solid transparent;
-
+    font-size: 22px;
 }
 button.main:hover{
     height: max-content;
@@ -165,7 +171,7 @@ button.welcome{
     color: #4A4A4A;
 }
 .featurescard p{
-    font-size: 18px;
+    font-size: 20px;
     color: #575757;
 }
 
@@ -259,4 +265,55 @@ footer h5{
 .single{
     background: none;
     background-color: #bdbdd1;
+}
+
+/* responsive design */
+
+@media (max-width: 768px) {
+    i.hamburger{
+        color: white;
+        font-size: 24px;
+        visibility: visible;
+    }
+    #offcanvas {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Hide off-canvas initially */
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        color: #fff;
+        overflow-x: hidden;
+        transition: left 0.3s;
+        z-index: 1000;
+        display: block;
+    }
+    #offcanvas li{
+        list-style: none;
+        padding: 10px;
+    }
+    #offcanvas a{
+        font-size: 22px;
+        color: #1c1c1c;
+        text-decoration: none;
+    }
+   nav ul{
+    display: none;
+   }
+   button.contact{
+    display: none;
+   }
+   button.resp{
+    margin-left: 10px;
+    padding: 8px 8px;
+   }
+   .features img{
+    width: 300px;
+   }
+   .featurescard h3{
+    font-size: 26px;
+   }
+   .featurescard p{
+    font-size: 16px;
+   }
 }

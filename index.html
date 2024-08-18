@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Innovate Solutions</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <script src="./js/apply.js" defer></script>
   </head>
   <body>
     <div class="banner">
@@ -23,7 +25,16 @@
             <li><a href="ourproducts.html">Our-Products</a></li>
           </ul>
         </nav>
-        <button class="main"><a href="contact.html">Contact Us</a></button>
+        <i class="ri-menu-3-line hamburger" onclick="toggleCanvas()"></i>
+        <div id="offcanvas">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="ourservices.html">Our-Services</a></li>
+          <li><a href="ourproducts.html">Our-Products</a></li>
+          <button class="main resp"><a href="contact.html">Contact Us</a></button>
+        </div>
+        <div id="overlay" class="overlay" onclick="closeCanvas()"></div>
+        <button class="main contact"><a href="contact.html">Contact Us</a></button>
       </header>
     </div>
     <div class="custom">
