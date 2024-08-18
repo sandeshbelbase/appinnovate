@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Innovate Solutions</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    />
+    <script src="./js/apply.js" defer></script>
   </head>
   <body>
-      <div style="background-color: blue;" class="header-class">
-        <header class="custom">
-          <div class="logo">
-            <a href="index.html">
-              <img src="images/Logo.png" alt="logo" />
+    <div style="background-color: blue" class="header-class">
+      <header class="custom">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/Logo.png" alt="logo" />
           </a>
         </div>
         <nav>
@@ -22,15 +27,26 @@
             <li><a href="ourproducts.html">Our-Products</a></li>
           </ul>
         </nav>
-        <button class="main"><a href="contact.html">Contact Us</a></button>
+        <i class="ri-menu-3-line hamburger" onclick="toggleCanvas()"></i>
+        <div id="offcanvas">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="ourservices.html">Our-Services</a></li>
+          <li><a href="ourproducts.html">Our-Products</a></li>
+          <button class="main resp">
+            <a href="contact.html">Contact Us</a>
+          </button>
+        </div>
+        <div id="overlay" class="overlay" onclick="closeCanvas()"></div>
+        <button class="main contact">
+          <a href="contact.html">Contact Us</a>
+        </button>
       </header>
     </div>
     <!-- Header section ends here -->
-    
+
     <section class="services custom">
-      <h2 class="heading">
-        Our Ser<span>vices</span>
-      </h2>
+      <h2 class="heading">Our Ser<span>vices</span></h2>
       <section class="featurescard">
         <div class="sub-content">
           <h3>Set up in minutes</h3>
@@ -87,31 +103,65 @@
       </section>
     </section>
 
-<!-- footer section starts here -->
+    <!-- footer section starts here -->
     <div class="custom">
-    <footer>
-      <section class="left-content">
-      <div class="footerlogo">
-        <img src="images/footerlogo.png" alt="logo">
-      </div>
-      <h5><img src="images/Vector.png" alt=""> Campsie 2195, NSW, Australia</h5>
-      <br>
-      <h5><img src="images/mail.png" alt=""> admin@appinnovate.com.au</h5>
-      </section>
-    <section class="left-content middle">
-      
-      <h4>Links</h4>
+      <footer>
+        <section class="left-content">
+          <div class="footerlogo">
+            <img src="images/footerlogo.png" alt="logo" />
+          </div>
+          <h5>
+            <img src="images/Vector.png" alt="" /> Campsie 2195, NSW, Australia
+          </h5>
+          <br />
+          <h5><img src="images/mail.png" alt="" /> admin@appinnovate.com.au</h5>
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="ri-facebook-circle-fill"></i
+            ></a>
+            &nbsp;
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="ri-instagram-line"></i></a
+            >&nbsp;
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="ri-twitter-line"></i
+            ></a>
+            <a href="https://wwww.linkedin.com" target="_blank"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </div>
+        </section>
+        <section class="left-content middle">
+          <h4>Links</h4>
           <h5><a href="./index.html">Home</a></h5>
           <h5><a href="./about.html">About Us</a></h5>
           <h5><a href="./services.html">Services</a></h5>
           <h5><a href="./contact.html">Contact</a></h5>
-      
-
-    </section>
-    <section class="left-content">
-      <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Campsie+(Appinnovate%20solutions)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
-    </section>
+        </section>
+        <section class="left-content">
+          <div style="width: 100%">
+            <iframe
+              width="100%"
+              height="200"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Campsie+(Appinnovate%20solutions)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/">gps systems</a></iframe
+            >
+          </div>
+        </section>
+      </footer>
     </div>
-    </footer>
+    <div class="copyright">
+      <h3>
+        ©Copyright
+        <a href="https://sandeshbelbase.com.np" target="_blank"
+          >Sandesh Belbase</a
+        >
+      </h3>
+    </div>
+    >
   </body>
 </html>

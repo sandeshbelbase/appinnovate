@@ -50,6 +50,10 @@ header{
     /* width: 40%; */
     height: 50px;
 }
+.logo img{
+    width: 100%;
+    
+}
 nav{
     /* width: 60%; */
     height: 100px;
@@ -260,6 +264,25 @@ footer h5{
     /* justify-content: center; */
     align-items: center;
 }
+.social{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 16px;
+}
+.social a{
+    text-decoration: none;
+    font-size: 22px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: max-content;
+}
+.copyright a{
+    color: red;
+}
 /* css to overrite contactus background */
 
 .single{
@@ -300,9 +323,7 @@ footer h5{
    nav ul{
     display: none;
    }
-   button.contact{
-    display: none;
-   }
+  
    button.resp{
     margin-left: 10px;
     padding: 8px 8px;
@@ -316,4 +337,43 @@ footer h5{
    .featurescard p{
     font-size: 16px;
    }
+   button.main{
+    font-size: 18px;
+   }
+   button.contact{
+    display: none;
+   }
+   .contactus h3{
+    font-size: 32px;
+   }
+   .contact p{
+    font-size: 14px;
+   }
+}
+
+@media (max-width: 578px) {
+    .logo img{
+        width: 70%;
+    }
+    .service{
+        flex-direction: column;
+    }
+    .featurescard{
+        flex-direction: column;
+    }
+    .contactus p{
+        text-align: left;
+        /* width: 100%; */
+    }
+    .contactus h3{
+        text-align: left;
+        font-size: 24px;
+        /* width: 100%; */
+    }
+    footer{
+        flex-direction: column;
+    }
+    .middle{
+        display: none;
+    }
 }
